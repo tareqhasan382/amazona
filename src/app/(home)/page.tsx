@@ -1,13 +1,10 @@
-import { Button } from "@/components/ui/button";
+import { HomeCarousel } from "@/components/ui/shared/header/home/home-carousel";
+import data from "../../../lib/data";
 
 export default function Home() {
-  const date = new Date();
-
   return (
-    <div className="container p-5">
-      <h2>Hello world</h2>
-      <p>{date.toString()}</p>
-      <Button>Button</Button>
+    <div>
+      <HomeCarousel items={data.carousels} />
     </div>
   );
 }
